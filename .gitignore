@@ -1,0 +1,6 @@
+cookbooks/**/*
+.ruby-version
+.ruby-gemset
+.vagrant
+.chef/
+berks-cookbooks/

@@ -1,0 +1,78 @@
+DEPENDENCIES
+  basic_security-tlq
+    git: git://github.com/TalkingQuickly/basic_security-tlq.git
+    revision: 9b95eb1af665d24d651e18f2f456ec9ec8fc7ee3
+  build-essential
+    git: git://github.com/opscode-cookbooks/build-essential.git
+    revision: bc1b4e332ae0d3d158d1354617ea5c129869f1a5
+  chef-solo-search
+    git: git://github.com/edelight/chef-solo-search.git
+    revision: 848fad1461c78fd502975f1df2e14eed12610635
+  hostnames
+    git: git://github.com/nathantsoi/chef-cookbook-hostname.git
+    revision: 86e4655bc202ffe635e4d0c18e35d88e804b9676
+  locales
+    git: git://github.com/phbergsmann/chef-locales.git
+    revision: 5ad79628e627a66edf028fe55fa7c92d26687cf0
+  look_and_feel-tlq
+    git: git://github.com/TalkingQuickly/look_and_feel-tlq.git
+    revision: 214b18d5266909721e85fe3acac4f7c926a0c609
+  memcached-tlq
+    git: git://github.com/TalkingQuickly/memcached-tlq.git
+    revision: 8ac6e2c68c32f79efcc4c19c7099b7db72ab158d
+  nginx-tlq
+    git: git://github.com/marceloboth/nginx-tlq.git
+    revision: aa0dd7c2678555cddb44d9d65373340e339e68f6
+  nodejs (= 0.6.0)
+  openssl (~> 2.0.0)
+  postgresql
+    git: git://github.com/opscode-cookbooks/postgresql.git
+    revision: 81300d5474bd454ba076a4330192b115bdd2c579
+  rails_gem_dependencies-tlq
+    git: git://github.com/TalkingQuickly/rails_gem_dependencies-tlq.git
+    revision: f62ff22492dd9a2c31cd856de176c19f0fbe2d73
+  rbenv
+    git: git://github.com/fnichol/chef-rbenv.git
+    revision: 0a3018634bafe58ad21c6ee271af015220e444b9
+  redis-tlq
+    git: git://github.com/TalkingQuickly/redis-tlq.git
+    revision: 0fd9ee3dcc7bd01f37e2e057b146595a7849e6aa
+  sudo
+    git: git://github.com/opscode-cookbooks/sudo.git
+    revision: cbd703cac77b7900674131441a22323f7d88d1c7
+  users
+    git: git://github.com/opscode-cookbooks/users.git
+    revision: fca9a42ab44dadbb98432c931dfc6c049ecc23ce
+
+GRAPH
+  apt (2.6.0)
+  basic_security-tlq (0.0.2)
+  build-essential (2.1.2)
+  chef-solo-search (0.5.1)
+  chef-sugar (2.4.1)
+  hostnames (0.3.5)
+    hostsfile (>= 0.0.0)
+  hostsfile (2.4.5)
+  java (1.28.0)
+  locales (0.3.1)
+  look_and_feel-tlq (0.0.5)
+    locales (>= 0.0.0)
+  memcached-tlq (0.0.2)
+  nginx-tlq (0.0.4)
+  nodejs (0.6.0)
+    build-essential (>= 0.0.0)
+  openssl (2.0.0)
+    chef-sugar (>= 0.0.0)
+  postgresql (3.4.10)
+    apt (>= 1.9.0)
+    build-essential (>= 0.0.0)
+    openssl (>= 0.0.0)
+  rails_gem_dependencies-tlq (0.0.3)
+    apt (>= 0.0.0)
+  rbenv (0.7.3)
+    java (> 1.4.0)
+    ruby_build (>= 0.0.0)
+  redis-tlq (0.0.6)
+  ruby_build (0.8.0)
+  sudo (2.7.1)
+  users (1.7.1)
