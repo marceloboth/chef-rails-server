@@ -1,13 +1,14 @@
-# Rails Server Template
+Copie sua chave SSH:
 
-## Overview
+    ssh-copy-id root@<host>
 
-This is a template chef structure for deploying Rails applications. The example template and Vagrantfile provide a single VM configuration which works out of the box and can be used to deploy any Rails 3.x or 4.x application. It's most suitable as a drop in Heroku replacement for low traffic apps.
+Preparar o ambiente:
 
-The configuration is also flexible enough to be adapted to multi machine setups.
+    bundle exec knife solo prepare root@<host>
 
-## Documentation
+Isso além de instalar o chef no ambiente remoto, criará um arquivo ``nodes/seuipdoserver.json``.
+Substitua o conteúdo desse arquivo com o conteúdo do arquivo ``nodes/rails_postgres_redis.json.example``.
 
-This is the example code which section one of the book "Reliably Deploying Rails Applications" available from leanpub here <https://leanpub.com/deploying_rails_applications> is based.
+Instalar as dependências no server:
 
-If you run into any issues using the template provided here, please open a Github issue, I actively monitor these and will respond as quickly as possible.
+    bundle exec knife solo cook root@<host>
